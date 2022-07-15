@@ -1,0 +1,5 @@
+module StoredVersion
+  def self.get
+    "42"
+  end
+end

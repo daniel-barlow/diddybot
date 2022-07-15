@@ -1,9 +1,12 @@
 # frozen_string_literal: true
+$LOAD_PATH.push File.expand_path('lib', __dir__)
 
 require_relative "lib/diddybot/version"
+require 'stored_version'
 
 Gem::Specification.new do |spec|
   spec.name = "diddybot"
+  files = StoredVersion.get
   spec.version = Diddybot::VERSION
   spec.authors = ["Daniel Barlow"]
   spec.email = ["daniel.barlow@simplybusiness.co.uk"]
